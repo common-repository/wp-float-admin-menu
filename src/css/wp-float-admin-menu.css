@@ -1,0 +1,90 @@
+/*
+css override -  do not alter unless you know what you are doing
+*/
+
+#wpbody-content {
+    clear:both;
+}
+
+#wpcontent{
+    margin-left: 0 !important;
+    border:1px solid #eee;
+    /*margin-left: 20px !important;*/
+}
+#wpcontent {
+    height: 100%;
+}
+
+#wpfooter {
+   /* margin-left: 20px;*/
+}
+
+#adminmenuback {
+    top:50px;
+    right:50px;
+    display:none;
+}
+
+#adminmenuwrap {
+   border:0 solid #999 !important;
+   position: fixed !important;
+   left:0px;
+   z-index:99998;
+   display:none;
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+   width: 160px;
+    /*background-color: rgb(34, 34, 34);*/
+}
+a, div {
+    outline: 0px none;
+}
+
+.wpfam_border{border:0 solid red !important;}
+
+.wpfm_style_img{ 
+    background:url(menu_icon.png) no-repeat center center !important; 
+    background-size:25px !important; 
+    width:20px!important;
+    text-align:center!important;
+}
+
+.wpfam_icon_menu_up{
+    width:160px !important;
+    cursor:pointer;}
+
+#wp-admin-bar-wp-logo,#wp-admin-bar-site-name,#wp-admin-bar-comments,#wp-admin-bar-new-content{display:none;}
+
+#wpadminbar #wp-admin-bar-float-menu > .ab-item:before {
+   content: "\f507";
+}
+
+.wrap {
+   margin: 10px 20px 0 20px !important;
+}
+
+@media screen and (max-width: 782px){
+    #adminmenuback{display:none;}
+    #adminmenuwrap{
+        display:none;
+        border:0 solid #999 !important;
+        position:absolute !important;
+        top: 0px !important;
+        left:0px !important;
+        z-index:99998;
+    }
+
+    .wrap {
+        margin: 10px 10px 0 10px !important;
+    }
+
+    .auto-fold #adminmenu, .auto-fold #adminmenuback, .auto-fold #adminmenuwrap {
+       position:absolute !important;
+       top: 0 !important;
+       margin-top:0px !important;
+       display:block;
+    }
+
+}
+
